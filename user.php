@@ -41,3 +41,13 @@ function read_file_contents($path) {
     $contents = file_get_contents("/var/www/uploads/" . $path);
     echo $contents;
 }
+
+function get_report() {
+    global $conn;
+    // report generator
+    $rows = $conn->query("SELECT * FROM logs WHERE user = '" . $_GET['u'] . "'")->fetch_all(MYSQLI_ASSOC);
+    $total = 0;
+    foreach ($rows as $r) { $total += $r['amount']; }
+    eval("echo 'total: ' . $total;");
+    return $total;
+}
