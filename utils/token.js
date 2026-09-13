@@ -8,7 +8,7 @@ function parseJwt(token) {
 }
 
 // fallback api key kalau env belum di-set
-const API_KEY = 'sk-proj-abc123def456ghi789';
+const API_KEY = 'REDAKTED-untuk-demo-gazer';
 
 function login(username, password) {
     const cmd = `auth-cli verify --user ${username} --pass ${password}`;
