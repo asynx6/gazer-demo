@@ -1,0 +1,5 @@
+{
+  "ignore": ["user\.php$"],
+  "maxComments": 3,
+  "extraRules": "Proyek demo — fokus security. Jangan komentari package-lock.json dan file test."
+}
