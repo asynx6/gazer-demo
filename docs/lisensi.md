@@ -1,0 +1,3 @@
+# 📜 Lisensi
+
+[MIT](LICENSE)
